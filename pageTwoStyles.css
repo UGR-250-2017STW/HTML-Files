@@ -1,0 +1,264 @@
+/* ---  Style sheet designed by Chris Simber 2017 --- */
+
+/*  eliminates a browser margin around the whole page, resizing margins, and color  */
+body {
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #F8F8FF;   /* very light gray*/           
+	line-height: 130%;
+	text-align: center;
+}
+
+
+/*  Margin color for Header portion of page black*/
+#wrapper-header {	background: #222; }
+
+
+/*  Header background and size parameters  */
+#header {
+	background: url('images/TunnelPic.jpg') left repeat-x;   /* was right repeat */
+	width: 82%;
+	height: 150px;	/* was 125px */
+	line-height: 125px;
+	margin: 0 auto;
+	border-left: 1px solid #707070;  /* stops header overflow  */
+	border-right: 1px solid #707070;
+	text-align: left;
+}
+
+
+
+/*  The TAB background color matching the url */
+#wrapper-menu {
+	background: #003366 url('images/cmenu-background.png') top left repeat-x;
+	float: left;
+	width: 100%;
+}
+
+/*  Menu parameters, and keeps the menu in center and auto-sizes  */
+#menu {
+	width: 82%;
+	margin: 0 auto;
+	font-family: Cambria;
+	font-size: 99%;
+	white-space: nowrap; /* stops half a menu link dropping */
+	padding-right: 2px;	/* To align the menu far left, and far right borders in all browsers */
+}
+
+
+* html #menu { padding-right: 0; } /* See above comment. This re-adjusts IE to the above padding */
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	border-left: 1px solid #4169e1;
+	border-right: 1px solid #4169e1;
+	width: 100%;
+}
+
+#menu li { display: inline; }
+
+#menu a:link, #menu a:visited {
+	padding: 0.25em 1em;
+	background: transparent;
+	color: white;
+	text-decoration: none;
+	float: left;
+	font-size: 120%;
+	border-right: 1px solid #000000;
+}
+
+
+/*  changes the tab when hovered over  */
+#menu a:hover {
+	background: #F8F8FF repeat-x;  	/*  was LightSteelBlue is #b0c4de */
+	color: #003366;			/* text color - dark blue #003366 */
+	font-style:italic;
+
+}
+
+
+/*  sets the content area background, borders, and resizes  */
+#content {
+	width: 80%; /* aligns with menu and header */
+	margin: 0 auto;
+	padding: 3.5em 1% 20px 1%;
+	border-left: 1px solid #bbb;		/* #bbb for both*/
+	border-right: 1px solid #bbb;
+	background: white;
+	font-size: 90%;
+	text-align: left;
+}
+
+* html #content { padding-top: 1.8em; } /* Set padding top in IE to 20px */
+
+#content ul {
+	padding-left: 6em;
+	list-style-type: disc;
+}
+
+
+
+/*  size and colors for footer  */
+.footer {
+	font-family: Cambria;
+	color: darkblue;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0.1em;
+	line-height: 135%;
+	font-size: 90%;
+	background-color: white;
+}
+
+/*  H1 text parameters  */
+#header h1 {
+	margin: 0;
+	font-family: Cambria;
+	padding: 0;
+	color: #eee;
+	font-size: 320%;
+	padding-left: 50px;
+	padding-top: 10px;
+	letter-spacing: -1px;
+}
+
+/*  h2 has the bottom border - blue line under it  */
+/*  It is used as section headers on every page  */
+h2 {
+	text-indent: 1em; 		/* added for indentation */
+	font-family: Cambria;
+	color: #444;
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #003366;  /* bottom border dark Blue  */
+	font-size: 150%;
+	letter-spacing: -0px;
+}
+
+
+h3 {
+	font-family: Cambria;
+	color: blue;
+	padding-bottom: 0em;
+	padding-left: 2.5em;
+	font-size: 150%;
+	letter-spacing: -0px;
+}
+
+
+h4 {
+	margin: 0;
+	font-family: Cambria;
+	padding: 0;
+	color: #eee;
+	font-size: 220%;
+	padding-left: 50px;
+	padding-top: 10px;
+	letter-spacing: -1px;
+}
+
+
+/*  h5 has the shadow  */
+h5 {
+	font-family: Cambria;
+	color: #444;
+	padding-bottom: 3px;
+	font-size: 150%;
+	letter-spacing: -0px;
+	color: white;
+    	 text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* shades of Black run from #000 black, to 333, 555, 888 gray, etc.   */
+
+h6 {
+	font-family: Cambria;
+	color: #000000;
+	padding-left: 3em;
+	padding-right: 4em;
+	padding-bottom: 3px;
+	font-size: 120%;
+	letter-spacing: 0.6px;
+}
+
+
+
+
+/*  For links and email addresses - doc links etc. */
+a:link, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+/* alt hovering  */
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/*  indentation or padding from left  */
+p { margin-left: 1em; }
+
+
+
+/* animation section */
+
+/* the <div> for the element */
+#carChanging {
+    	position: relative;
+	animation-name: carMove;
+	animation-duration: 4s;
+	animation-iteration-count: 25;
+}
+
+
+
+#rotate {
+	position: relative;
+}
+
+
+/* the <div> for transforming */
+#rotate:hover {
+	position: relative;
+	-ms-transform: rotate(360deg);		/* IE 9 */
+	-webkit-transform: rotate(360deg);	/* Chrome, safari */
+	transform: rotate(360deg);
+	-webkit-transition-duration: 6s; /* Safari */
+    	transition-duration: 6s;
+}
+
+
+
+/* handles the image on the graphics page */
+
+  
+/*  the image is 1024w x 768h  */
+
+#growingEarth {
+	
+
+}
+
+#growingEarth:hover {
+   	 -webkit-transform: scale(4.0);
+    	-ms-transform: scale(4.0);
+	transform: scale(4.0);
+	transition-duration: 5s;
+}
+
+@-webkit-keyframes carMove {
+  	from {left: 100px;}
+	to {left: 600px;}
+}
+
+@keyframes carMove {
+  	from {left: 100px;}
+	to {left: 600px;}
+}
+
+
+

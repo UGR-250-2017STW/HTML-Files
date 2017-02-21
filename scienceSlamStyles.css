@@ -1,0 +1,286 @@
+
+#wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0;
+	background-color: lightblue;
+}
+
+
+#leftmenu {
+	float:left;
+	width: 200px;
+	font-family: Cambria;
+	font-size: 100%;
+	padding-left: 1.5em;
+	position: fixed;
+	background-color: lightblue;
+	line-height: 130%;   /*  this pads all menu items vertically to space them apart */
+	position: fixed;
+}
+
+
+.fixedImage {
+	padding-left: 0;
+	position:fixed;
+}
+
+
+
+
+/*  Defines the class title which is the title font - main header  */
+.title {
+	font-family: Cambria;
+	color: #000;
+	font-weight: bold;
+	padding-right: 1.5em;
+	padding-bottom: 1px;
+	border-width: 100%;
+	font-size: 200%;
+	letter-spacing: 0.3px;
+}
+
+
+
+#rightside {
+	margin-left: 225px;
+	margin-right: auto;
+	padding-left: 1.5em;
+	background-color: whitesmoke;  /* lightgray */
+
+}
+
+
+/* This is the section separator - this was H2 */
+.separator {
+	font-family: Cambria;
+	color: #000000;
+	font-weight: bold;
+	margin-right: 1.0em;
+	padding-bottom: 4px;
+	border-bottom: 2px solid BLUE;
+	font-size: 140%;
+	letter-spacing: -0px;
+}
+
+
+
+/* Most of the body text uses this class */
+.text {
+	font-family: Cambria;
+	color: #000;
+	padding-left: 1.0em;
+	padding-right: 30px;
+	padding-bottom: 3px;
+	font-size: 110%;
+	letter-spacing: -0px;
+}
+
+
+
+
+/* list style and font settings  */
+ul {
+	font-family: Cambria;
+	color: #000;
+	padding-left: 5em;
+	padding-right: 30px;
+	padding-bottom: 0px;
+	font-size: 110%;
+	letter-spacing: -0px;
+
+}
+
+/* list style and font settings for the 3 ordered lists */
+ol {
+	font-family: Cambria;
+	color: #000;
+	padding-right: 30px;
+	padding-bottom: 3px;
+	font-size: 100%;
+	letter-spacing: -0px;
+
+}
+
+
+
+
+/*  For links including the left menu - doc links etc. */
+a:link, a:visited {
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	padding-bottom: 30px;
+}
+
+
+
+/*  Changes the display when links are hovered over  */
+a:hover {
+	color: green;
+	font-style:italic;
+	font-weight: bold;
+	text-decoration: underline; 
+}
+
+
+
+/* This is the text class for hovering */
+.textHover {
+	font-family: Cambria;
+	color: #000;
+	padding-left: 1.0em;
+	padding-right: 30px;
+	padding-bottom: 3px;
+	font-size: 110%;
+	letter-spacing: -0px;
+}
+
+
+/* change the text when hovering */
+.textHover:hover {
+    	color: red;
+	font-style:italic;
+	font-weight: bold;
+	font-size: 200%;
+	transition-duration: 2s;
+}
+
+
+
+
+/*  size and colors for footer  */
+.footer {
+	font-family: Cambria;
+	color: darkblue;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0.1em;
+	line-height: 135%;
+	font-size: 90%;
+	background-color: white;
+}
+
+/* create a button */
+.button {
+	background-color: white;  /* green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size:16px;
+	-webkit-transition-duration: 0.4s; /* safari */
+	transition-duration: 0.4s;
+	cursor:pointer;
+}
+
+
+.button1 {
+    	background-color: white; 
+    	color: black; 
+   	 border: 2px solid #4CAF50;
+}
+
+/* change the button when hovering */
+.button1:hover {
+    	background-color: #4CAF50;
+    	color: white;
+	font-weight: bold;
+}
+
+
+
+.button2 {
+    	background-color: white; 
+    	color: black; 
+    	border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    	background-color: #008CBA;
+    	color: white;
+	font-weight: bold;
+}
+
+
+
+.button3 {
+   	background-color: white; 
+    	color: black; 
+    	border: 2px solid #f44336;
+}
+
+.button3:hover {
+    	background-color: #f44336;
+   	 color: white;
+	font-weight: bold;
+}
+
+
+
+
+
+/* Shaped buttons that change when hovering */
+.sbutton1 {
+	border-radius: 12px;		/* this is the radius of the corner */ 
+	background-color: white; 
+    	color: black; 
+    	border: 2px solid #4CAF50;
+}
+
+.sbutton1:hover {
+    	background-color: #4CAF50;
+    	color: white;
+	font-weight: bold;
+}
+
+
+.sbutton2 {
+    	border-radius: 25%;
+	background-color: white; 
+	color: black; 
+    	border: 2px solid #008CBA;
+}
+
+.sbutton2:hover {
+    background-color: #008CBA;
+    color: white;
+	font-weight: bold;
+}
+
+
+.sbutton3 {
+    	border-radius: 50%;
+	background-color: white; 
+	color: black; 
+	border: 2px solid #f44336;
+}
+
+.sbutton3:hover {
+    background-color: #f44336;
+    color: white;
+	font-weight: bold;
+}
+
+
+
+
+.growingBlock {
+	width: 100px;
+    	height: 100px;
+    	background: green;
+    	-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    	transition: width 2s, height 4s;
+}
+
+.growingBlock:hover {
+   	 width: 300px;
+    	height: 300px;
+}
+
+
+
+
